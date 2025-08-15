@@ -20,8 +20,8 @@ print(type(a))
 weight_in_kg = 60.5
 print(type(weight_in_kg))
 
-isMarried = True # or False
-print(type(isMarried))
+is_married = True # or False
+print(type(is_married))
 
 birth_year = input("Enter your birth year: ")
 age = 2025 - int(birth_year)
@@ -59,15 +59,19 @@ print("Percentage:", percentage, end="%")
 print("\n")
 
 
-# conditional statements
-number = int(input("Enter a number: "))
-if number > 0:
-    print("Its a positive number")
-elif number < 0:
-    print("Its a negative number")
-else:
-    print("Its zero")
+## conditional statements
+# activity 1
+first_number = int(input("Enter first number: "))
+second_number = int(input("Enter second number: "))
 
+if first_number > second_number:
+    print("First number is greater than second number")
+elif first_number < second_number:
+    print("Second number is greater than first number")
+else:
+    print("Both numbers are equal")
+
+# activity 2
 cost_price = int(input("Enter cost price of the apple: "))
 selling_price = int(input("Enter selling price of the apple: "))
 
@@ -80,18 +84,7 @@ elif selling_price < cost_price:
 else:
     print("No Profit No Loss")
 
-
-first_number = int(input("Enter first number: "))
-second_number = int(input("Enter second number: "))
-
-if first_number > second_number:
-    print("First number is greater than second number")
-elif first_number < second_number:
-    print("Second number is greater than first number")
-else:
-    print("Both numbers are equal")
-
-
+# activity 3
 number = int(input("Enter a number to check for even/odd: "))
 remainder = number % 2
 if remainder == 0:
@@ -99,8 +92,7 @@ if remainder == 0:
 else:
     print("It's odd")
 
-
-# python operators - II
+# activity 4
 a = 10
 b = 20
 result = a > b
@@ -115,11 +107,13 @@ else:
     print("All numbers are negative or zero")
 
 
+## python operators - II
+# activity 1
 body_temperature = 38
 if body_temperature != 37:
     print("Abnormal body temperature detected")
 
-
+# activity 2
 height = float(input("Enter your height in cm: "))
 weight = float(input("Enter your weight in kg: "))
 bmi_denominator = (height / 100)**2
@@ -135,9 +129,15 @@ else:
 
 print("Your BMI is", round(bmi, 2))
 
+# activity 3
 year = int(input("Enter a year to check if it's a leap year: "))
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print("It's a leap year!")
 else:
     print("It's not a leap year")
+
+## python operators - III
+# activity 1
+
+## python challenges
 
